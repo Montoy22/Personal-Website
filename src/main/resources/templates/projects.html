@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <div th:fragment="projects">
+            <!-- Projects Section-->
+            <section class="py-5">
+
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+
+                    <div class="text-center mb-4">
+                        Filter
+                        <button class="btn btn-outline-primary mx-2 filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="hardware">Hardware</button>
+                        <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="software">Software</button>
+                    </div>
+
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+                            <!-- Project Card 1-->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="software">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Chatting application</h2>
+                                            <p>An academic group project where the user can create an account to communicate with other users. Features include: group messaging and 
+                                                private messaging, group creation, message deletion, and emoji support  </p>
+                                            <p>Tools: MySQL</p>
+                                            <p>Language: Node.js, React.js</p>
+                                            <a href="https://github.com/SimonENGR/NPB-SOEN341_Project_W25" target="_blank">View code on GitHub</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/ChattingApplicationPicture.png" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="hardware">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Design of basic CPU component</h2>
+                                            <p>An academic project where one had to design computer components: ALU, register file, next-address unit. 
+                                                These components were made using VHDL. The design was validated by simulation on an FPGA board</p>
+                                            <p>Tools: ModelSim, Xilinx Vivado</p>
+                                            <p>Language: VHDL</p>
+                                            <a href="https://github.com/Montoy22/Simplified-Computer-components-in-VHDL" target="_blank">View code on GitHub</a>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 3-->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="hardware">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Design of a room occupancy tracker</h2>
+                                            <p>An academic solo project where one had to design an embedded system capable of tracking the occupancy of a room. The design was validated using Xilinx Vivado.</p>
+                                            <p>Tools: ModelSim</p>
+                                            <p>Language: VHDL</p>
+                                            <a href="https://github.com/Montoy22/COEN313-room_occupancy_tracker" target="_blank">View code on GitHub</a>                                        </div>
+                                        <img class="img-fluid" src="assets/images/COEN313_ProjectFinalSchematicDesign.png" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 4-->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="hardware">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Hovercraft Competition</h2>
+                                            <p>An academic group project where each group designed a hovercraft which had to travel through a maze.<br> </p>
+                                            <p>Tools: Arduino IDE, Atmega328p</p>
+                                            <p>Language: C, C++, Arduino</p>
+                                            <a href="https://github.com/Montoy22/Hovercraft" target="_blank">View code on GitHub</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/IMG20240619112528 (1) (2).jpg" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 1-->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="software">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Maze Game</h2>
+                                            <p>Personal project where the user can design their own maze by hand or by being assisted by an algorithm through an UI. The maze can then be played on. The solver
+                                             can validate their solution by comparing their path with one obtained by a BFS algorithm.</p>
+                                             <p>Language: Java</p>
+                                             <a href="https://github.com/Montoy22/mazeGame" target="_blank">View code on GitHub</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/javaMaze.png" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="software">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Othello Game</h2>
+                                            <p>Personal project where the 2 players can play the game of Othello on the console of a computer.</p>
+                                            <p>Language: Java</p>
+                                            <a href="https://github.com/Montoy22/othello" target="_blank">View code on GitHub</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="software">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Stock price notifier</h2>
+                                            <p>Personal project where the user chooses a stock and writes their whatsApp contact information. When the stock price varies over 
+                                                a predetermined percentage, the user will receive a message, sent using Twilio, and a news article related to that stock, from the stock API.</p>
+                                            <p>Language: Python</p>
+                                            <a href="https://github.com/Montoy22/Stockprice-Notifier" target="_blank">View code on GitHub</a>
+                                        </div>
+                                        <img class="img-fluid" src="assets/images/stock_notifier_python (1).jpg" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
