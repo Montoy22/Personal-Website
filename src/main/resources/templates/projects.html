@@ -13,7 +13,7 @@
                     </div>
 
                     <div class="text-center mb-4">
-                        Filter
+                        Filters: 
                         <button class="btn btn-outline-primary mx-2 filter-btn active" data-filter="all">All</button>
                         <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="hardware">Hardware</button>
                         <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="software">Software</button>
@@ -21,6 +21,131 @@
 
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+                            <!-- Project Card -->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="hardware">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Design of a wind velocity data acquisition device</h2>
+                                            <p>Built a portable device to measure wind velocity using a seven-hole pitot tube and a microcontroller for real-time data acquisition, 
+                                                achieving under 9% measurement error. Collected data was used to train an MLP model to predict wind directions in the environment it was trained on. </p>
+                                            <p>Tools: Android Studio, Pycharm, Arduino Due, Arduino Uno</p>
+                                            <p>Language: C++, Python</p>
+                                            <!-- <a href="https://github.com/QualiAir" target="_blank">View code on GitHub</a> -->
+                                        </div>
+
+                                        <div class="project-img-wrapper">
+                                        <div class="carousel slide project-carousel" id="chatCarousel" data-bs-ride="false">
+                                            <!-- Carroussel -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/images/fullPitotImg.jpg" class="d-block project-img" alt="QualiAir box photo 1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/images/pitotImg.jpg" class="d-block project-img" alt="QualiAir box photo 2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/images/pitotDAQImg.jpg" class="d-block project-img" alt="QualiAir box photo 2">
+                                                </div>
+                                                
+                                            </div>
+
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#chatCarousel" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#chatCarousel" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Project Card -->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="hardware">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Flight Controller Redesign & Simulation</h2>
+                                            <p>Upgraded an existing flight controller during my internship. Notably, I reworked motor driver settings, 
+                                                replaced gearboxes, and rewrote the control logic. Verified the implementation by integrating it with FlightGear, a flight simulator.</p>
+                                            <p>Tools: Arduino IDE, FlightGear</p>
+                                            <p>Language: C/C++</p>
+                                        </div>
+                                        <div class="project-img-wrapper">
+                                            <img class="project-img" src="assets/images/GCSimage_1.jpg" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Project Card -->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="hardware">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Design of an air quality monitoring system</h2>
+                                            <p>In this academic project, our team designed and implemented a system to monitor air quality in real-time. The system includes sensors for measuring various pollutants
+                                                and the collected data is processed and displayed in a user-friendly interface: an android app called "QualiAir". </p>
+                                            <p>Tools: Android Studio, Visual Studio Code, Firebase, ESP32</p>
+                                            <p>Language: C++, Python, Java</p>
+                                            <a href="https://github.com/QualiAir" target="_blank">View code on GitHub</a>
+                                        </div>
+
+                                        <div class="project-img-wrapper">
+                                        <div class="carousel slide project-carousel" id="chatCarousel" data-bs-ride="false">
+                                            <!-- Carroussel -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/images/QualiAir_box_img1_ver2.jpg" class="d-block project-img" alt="QualiAir box photo 1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/images/QualiAir_box_img2_ver2.jpg" class="d-block project-img" alt="QualiAir box photo 2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/images/QualiAir_app_img1_ver2.jpg" class="d-block project-img" alt="QualiAir app screenshot 1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/images/QualiAir_app_img2_ver2.jpg" class="d-block project-img" alt="QualiAir app screenshot 2">
+                                                </div>
+                                            </div>
+
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#chatCarousel" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#chatCarousel" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Card -->
+                            <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="software">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Designed a product review rating sorting ML model </h2>
+                                            <p>Developped and trained multiple machine learning models to sort product reviews based on ratings.
+                                                 The model we have chosen are Random Forest, Naive Bayes, Logistic Regression, and Gradient Boosting. Our best model was the Naive Bayes achieving an f1 score of 0.64.</p>
+                                            <p>Tools: google collab</p>
+                                            <p>Language: Python</p>                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <!-- Project Card 1-->
                             <div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5" data-category="software">
